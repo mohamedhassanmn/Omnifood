@@ -1,0 +1,620 @@
+/*theme color:#e67e22*/
+/*-------------------------*/
+/* BASIC SETUP*/
+/*-------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  background-color: rgb(255, 255, 255);
+  font-weight: 300;
+  color: #555;
+  text-rendering: optimizeLegibility;
+}
+html,body{
+overflow-x: hidden;}
+
+/*-------------------------*/
+/*    REUSEABLE CODE    */
+/*-------------------------*/
+section {
+  padding: 80px 0;
+}
+
+.clearfix {
+  zoom: 1
+}
+
+.clearfix:after {
+  content: ".";
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+h1, h2, h3 {
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 240%;
+  color: rgb(255, 255, 255);
+  word-spacing: 4px;
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-size: 180%;
+  word spacing: 2px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+h3 {
+  font-size: 110%;
+  margin-bottom: 15px;
+}
+
+.grid p {
+  font-size: 90%;
+  line-height: 145%;
+}
+
+.long-script h2:after {
+  display: block;
+  height: 2px;
+  background-color: #e67e22;
+  Content: " ";
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.long-script p {
+  margin-top: 30px;
+  line-height: 140%;
+  width: 70%;
+  margin-left: 15%;
+}
+
+.features .long-script {
+  margin-bottom: 30px;
+}
+
+.grid {
+  padding: 1%;
+}
+
+.icon-big {
+  display: block;
+  font-size: 350%;
+  color: #e67e22;
+  margin-bottom: 30px;
+}
+
+.row {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.col {
+  display: block;
+  float: left;
+  margin: 1% 0% 1% 1.6%;
+}
+
+.span-4-of-1 {
+  width: 23%;
+}
+
+/*-------------------------*/
+/* HEADER */
+/*-------------------------*/
+header {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(hero.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(hero.jpg);
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.hero-txt {
+  position: absolute;
+  width: 1140px;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+/*-------------------------*/
+/* BUTTONS */
+/*-------------------------*/
+.btn:link, .btn:visited,input[type=submit]{
+  display: inline-block;
+  padding: 10px 30px;
+  font-weight: 300;
+  text-decoration: none;
+  border-radius: 200px;
+  color: rgb(255, 255, 255);
+  -webkit-transition: background-color 0.2s, color 0.2s, border 0.2s;
+  transition: background-color 0.2s, color 0.2s, border 0.2s;
+}
+
+.hungry:link, .hungry:visited,input[type=submit] {
+  margin-right: 20px;
+  background-color: #e67e22;
+  border: 1px solid #e67e22;
+}
+
+.show-me:link, .show-me:visited {
+  border: 1px solid #e67e22;
+  color: #e67e22;
+}
+
+.btn:hover, .btn:active,input[type=submit]:hover,input[type=submit]:active{
+  background-color: #cf6d17;
+}
+
+.hungry:hover, .hungry:active,input[type=submit] {
+  border: 1px solid #cf6d17;
+}
+
+.show-me:hover, .show-me:active {
+  border: 1px solid #cf6d17;
+  color: #fff;
+}
+
+.logo-white {
+  height: 100px;
+  width: auto;
+  float: left;
+  margin-top: 20px;
+}
+.logo{
+  height:50px;
+  width: auto;
+  float:left;
+  margin-top: 20px;
+}
+
+.navi {
+  float: right;
+  list-style: none;
+  margin-top: 55px;
+  font-size: 90%;
+}
+/*---------------------------*/
+/*------------sticky nav---------------*/
+/*---------------------------*/
+.sticky{
+  position:fixed;
+  background-color: #fff;
+  width: 100%;
+  box-shadow: 0 1px 1px ;
+}
+.sticky .navi li a:link,
+.sticky .navi li a:visited {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+}
+
+/*---------------------------*/
+/*------------main nav---------------*/
+/*---------------------------*/
+.navi li {
+  float: left;
+  margin-left: 40px;
+}
+
+.navi li a:link,
+.navi li a:visited {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+}
+
+.navi li a:hover,
+.navi li a:active {
+  padding-bottom: 10px;
+  border-bottom: 2px solid #e67e22;
+}
+
+/*-------------------------*/
+/* MEALS */
+/*-------------------------*/
+.section-meals {
+  clear: left;
+  padding: 0;
+}
+
+.meal-showcase {
+  list-style: none;
+  width: 100%;
+}
+
+.meal-showcase li {
+  display: block;
+  float: left;
+  width: 25%;
+}
+
+.meal-photo {
+  width: 100%;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.83);
+}
+
+.meal-photo img {
+  opacity: 0.7;
+  width: 100%;
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+  -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+  transition: opacity 0.5s, -webkit-transform 0.5s;
+  transition: transform 0.5s, opacity 0.5s;
+  transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
+}
+
+.meal-photo img:hover  {
+  opacity: 1;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+/*-------------------------*/
+/* section4- how it works */
+/*-------------------------*/
+.boxes {
+  width: 45%;
+}
+
+.boxes:first-child {
+  text-align: right;
+  padding-right: 3%;
+  margin-top: 30px;
+}
+
+.boxes:last-child {
+  padding-left: 3%;
+  margin-top: 70px;
+}
+
+.iphone {
+  width: 45%;
+}
+
+.how-it-work:after {
+  width: 100px;
+  height: 2px;
+  display: block;
+  content: "";
+  background-color: #e67e22;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.section4 {
+  background-color: rgb(245, 245, 245);
+}
+
+.steps {
+  color: #e67e22;
+  border: 2px solid #e67e22;
+  display: inline-block;
+  border-radius: 50%;
+  height: 55px;
+  width: 55px;
+  padding: 1%;
+  text-align: center;
+  font-size: 150%;
+  float: left;
+  margin-right: 5%;
+  margin-bottom: 10%;
+}
+
+.download-button {
+  height: 50px;
+  width: auto;
+  margin-right: 10px;
+  margin-top: 40px;
+}
+
+/*-------------------------*/
+/* section5- CURRENT-CITIES */
+/*-------------------------*/
+.current-city {
+  list-style: none;
+  width: 100%;
+  margin-top: 50px;
+  margin-left: 2%;
+}
+
+.current-city li {
+  display: block;
+  float: left;
+  width: 25%;
+}
+
+.detail {
+  width: 85%;
+  overflow: hidden;
+}
+
+.detail img {
+  width: 100%;
+}
+
+.topic:after {
+  width: 100px;
+  height: 2px;
+  display: block;
+  content: "";
+  background-color: #e67e22;
+  margin: 0 auto;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.icon-small {
+  color: #e67e22;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 15px;
+}
+
+.cities-name {
+  margin-top: 20px;
+}
+
+/*-------------------------*/
+/* section6-testimonial */
+/*-------------------------*/
+.testimonial {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.80)), to(rgba(0, 0, 0, 0.80))), url(img/back-customers.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.80), rgba(0, 0, 0, 0.80)), url(img/back-customers.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  color: rgb(255, 255, 255);
+}
+
+.testimonial h2:after {
+  width: 100px;
+  height: 2px;
+  display: block;
+  content: "";
+  background-color: #e67e22;
+  margin: 0 auto;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.customer-img {
+  height: 50px;
+  width: auto;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+cite {
+  display: block;
+  margin-top: 30px;
+}
+
+blockquote {
+  display: inline-block;
+  width: 30%;
+  font-style: italic;
+  position: relative;
+  line-height: 145%;
+  padding-right:0px;
+  padding-left: 45px;
+}
+
+blockquote:before {
+  content: "\201C";
+  font-size: 500%;
+  display: block;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+}
+
+
+/*-------------------------*/
+/* section7- sign up and pricing plan*/
+/*-------------------------*/
+.customer-col {
+  margin-top: 50px;
+}
+.Starteatinghealthytoday{
+  background-color:rgb(245, 245, 245);
+}
+ #price-list{
+  display: block;
+  float: left;
+  margin: 1% 0% 1% 3.6%;
+}
+.price-grid{
+
+  margin: 35px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  width: 95%;
+  margin-left: 8%;
+  -webkit-box-shadow: 5px 5px 5px 4px rgb(230, 226, 227);
+          box-shadow: 5px 5px 5px 4px rgb(230, 226, 227);
+}
+.price-grid div{
+  padding: 15px;
+  border-bottom: 1px solid #e8e8e8;
+}
+.price-grid div:first-child{
+  background-color: rgb(237, 237, 237);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.line{
+  line-height: 145%;
+  font-size:80%;
+}
+.price-grid ul li{
+  line-height: 145%;
+}
+.Starteatinghealthytoday h2:after {
+  width: 100px;
+  height: 2px;
+  display: block;
+  content: "";
+  background-color: #e67e22;
+  margin: 0 auto;
+  margin-top: 30px;
+  text-align: center;
+}
+.sign-btn{
+  text-align:center;
+
+}
+.specifications{
+  list-style: none;
+}
+.price{
+  font-size: 300%;
+  color:#e67e22;
+  font-weight: 100;
+}
+.price span{
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 30%;
+  font-weight:300;
+}
+/*-------------------------*/
+/* section8- Contact form*/
+/*-------------------------*/
+.formHeading:after {
+  width: 100px;
+  height: 2px;
+  display: block;
+  content: "";
+  background-color: #e67e22;
+  margin: 0 auto;
+  margin-top: 30px;
+  text-align: center;
+}
+.myform{
+  width:60%;
+  margin:30px auto 0 auto;
+}
+.form-col{
+  width:65%;
+}
+.form-col1{
+  width:31%;
+}
+
+input[type=submit]{
+  font-size:100%;
+  font-family:'Lato', sans-serif;
+}
+
+input[type=text],input[type=email],select ,textarea{
+  width:100%;
+  padding:7px;
+  border-radius: 3px;
+  border:1px solid #ccc;
+  height: 45px;
+  font-size: 100%;
+  color: rgb(105, 105, 105);
+  font-family:'Lato', sans-serif;
+}
+
+textarea{
+
+  height:100px;
+}
+
+input[type=checkbox]{
+  margin:10px 5px 10px 0px;
+}
+*:focus{ outline: none;}
+/*-------------------------*/
+/* section8- footer*/
+/*-------------------------*/
+
+footer{
+  background-color:rgb(74, 74, 74);
+}
+.footer-nav {
+  list-style: none;
+  margin-left: 5%;
+  padding-top:4%;
+}
+.footer-nav li{
+  display: inline-block;
+  float: left;
+  padding-left:2%;
+  font-size: 80%;
+}
+.footer-nav li a:link,
+.footer-nav li a:visited,
+ .social-icons li a:link,
+ .social-icons li a:visited
+{
+
+  text-decoration: none;
+  color: rgb(150, 150, 150);
+}
+.footer-nav li a:hover,
+.footer-nav li a:active{
+  color: rgb(200, 200, 200)
+}
+.insta:hover,
+.insta:active{
+ color:#517fa4;
+}
+.gplus:hover,
+.gplus:active
+{
+  color: #dc4e41;
+}
+.fb:hover,
+.fb:active
+{
+  color:#3b5998;
+}
+.twitter:hover,
+.twitter:active
+{
+  color:#55acee;
+}
+.social-icons{
+  list-style:none;
+  margin-right: 5%;
+}
+.social-icons li{
+  display:inline-block;
+  float: right;
+  padding-right: 2%;
+  font-size: 27px;
+}
+footer p{
+  color: rgb(150, 150, 150);
+  text-align: center;
+  font-size: 80%;
+  margin-bottom: 30px;
+}
+/*---------------------Completed------------------*/

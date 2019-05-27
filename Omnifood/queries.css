@@ -1,0 +1,50 @@
+small phones to small tablets from 0 to 1200px
+@media only screen and (max-width:1200px){
+html{
+  font-size: 18px;
+}
+.logo {
+  height: 70px;
+  width: auto;
+}
+.hero-txt {
+  left: 50%;
+  top: 60%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+h1{
+  font-size: 180%;
+}
+}
+/*small tablets to big tablets from 0 to 1023px*/
+@media only screen and (max-width:1023px){
+  .hero-txt {
+ margin-left: 15%;
+  }
+  .logo {
+    height: 100px;
+    margin-top: 20px auto 15% 5%;
+
+  }
+
+}
+
+
+
+
+/*small phones to small tablets from 0 to 767px*/
+@media only screen and (max-width:767px){
+
+}
+
+
+
+
+
+
+
+/*small phones 0 to 480px*/
+@media only screen and (max-width:480px){
+
+}
